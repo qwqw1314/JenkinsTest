@@ -7,7 +7,6 @@ pipeline {
                 git 'https://github.com/qwqw1314/JenkinsTest.git'
 
                 // Run Maven on a Unix agent.
-                sh "cd JenkinsTest"
                 sh "go build ."
 
                 // To run Maven on a Windows agent, use
